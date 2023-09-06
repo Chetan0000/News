@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newsPaper</title>
+    <link rel="icon" type="image/x-icon" href="./assets/newspaper.png" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d914beddb0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     
+    <nav>
+        <div class="main-nav container flex">
+            <!------company logo ------->
+
+            <a href="./index.html" class="company-logo">
+                <img src="./assets/newspaper.png" alt="company-logo">
+            </a>
+
+            <!------------nav links  ------------->
+            <div class="nav-links ">
+                <ul class="flex">
+                    <a href=""></a>
+                    <a href="#"><li class="hover-link nav-link" id="politics" onclick="onNaveItemClick('politics')">Politics</li></a>
+                    <a href="#"><li class="hover-link nav-link" id="sports" onclick="onNaveItemClick('sports')">Sports</li></a>
+                    <a href="#"><li class="hover-link nav-link" id="finance" onclick="onNaveItemClick('finance')">Finance</li></a>
+                </ul>
+            </div>
+            <!------------- search- bar ------------ -->
+            <div class="search-bar flex">
+                <input type="text" class="news-input" placeholder="e.g science">
+                <button class="search-button">search</button>
+            </div>
+        </div>
+
+        
+
+    </nav>
+
+
+    <main>
+
+        <div class="card-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c62f4c78c4ba46a1268be_avatar-1-p-1080.jpeg" alt="">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 id="news-source">End Gadget 26/8/2027 </h6>
+                
+                <p id="news-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also</p>
+            </div>
+        </div>
+    </template>
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
